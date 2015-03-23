@@ -1,0 +1,12 @@
+<h1>{{ title }}</h1>
+<h2>{{ subtitle }}</h2>
+
+<ul class="item-list">
+  {{#each item in sortedItems }}
+    <li data-id="{{unbound item.id }}">
+      name: {{ item.name }}<br />
+      sortOrder: {{ item.sortOrder }}<br />
+      id: {{ item.id }}
+    </li>
+  {{/each}}
+</ul>
